@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<style type="text/css">
+	.date-time-wrap {
+		width: 50px;
+	    border: black;
+	    text-align: center;
+	    font: bold;
+	    font-weight: bold;
+	    background: #999;
+	    color: white;
+	}
+	.event-day{ 
+		background-color: #990000;
+	}
+	
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin-right:-4px;
+    text-align: center;
+}
+#left{
+	overflow-y: scroll;
+	height: 400px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus  {
+	color: #990000;
+}
+.bottom-line{
+	color: #990000;
+}
+.red-background{
+	background-color: #990000;
+}
+.white{
+	color:white;
+}
+.fa {
+  
+  font-size: 30px;
+  width: 40px;
+  height: 38px;
+  background-color: #990000;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  
+}
+.fa:hover {
+    opacity: 0.7;
+}
+</style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Home - CSSE</title>
+  </head>
+  <body>
+  <div class="container-fluid">
+      <div class="container-fluid">
+      <div class="row align-items-center" style="background-color: #990000;">
+        <div class="col-sm-2">
+          <img class="img-fluid" src = "http://csse.usc.edu/new/wp-content/uploads/2015/01/logo.png" >
+        </div>
+        <div class="col-sm-8">
+          <div class="row justify-content-center">
+            <h3 class="text-md-center" style="color: #fbcd33;">Center for Systems and Software Engineering</h3>
+          </div>
+          <div class="row justify-content-center align-items-end">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" >
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/news">News</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="/events">Events</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Research
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Technical Reports</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Publications</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/affiliates">Affiliates</a>
+                  </li>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Education
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/Education_Admission">Admission</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/Education_Degrees">Degrees</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/Education_Courses">Courses</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Admin actions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/admin_events">Add events</a>
+                      <div class="dropdown-divider"></div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sign in
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"><input type="button" onclick="location.href='/register';" value="Register"/></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><input type="button" onclick="location.href='/login';" value="Sign In"/></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container-fluid col-sm-10 text-dark" style="background-color: white;">
+<br>
+<div class="container" style="margin-top:30px">
+<h1 style="color:#990000">NEWS</H1><br>
+ <div class="container-fluid col-sm-10">
+<form method="get" action="/news/page/1/" class="syndicated-year-select" id="category_filter"> <label for="post_dept"><strong><span style="color: #a1a1a1;"></span>Posted In</strong></label> <select name="post_dept" id="post_dept" class="syndicated-year-select"><option value='' selected="selected">All</option><option value="253">News</option><option value="255">Uncategorized</option></select> <label for="post_topic"><strong>Topic</strong></label> <select name="post_topic" id="post_topic"><option value='' selected="selected">All</option><option value="251">Academics</option><option value="252">Advancement</option><option value="254">Alumni</option><option value="260">Faculty</option><option value="261">Graduate and Professional Programs</option><option value="269">Research</option><option value="271">Students</option> </select> <label for="post_year"><strong>Year</strong></label> <select name="post_year" id="post_year"><option value='' selected="selected">All</option><option value="2019" >2019</option>;<option value="2018" >2018</option>;<option value="2017" >2017</option>;<option value="2016" >2016</option>; </select> <input type="hidden" name="form_submitted" value="1" /> <input type="submit" value="Submit" style="background-color:#990000; color:white"> <a class="logout" href="?logout=1"><input type="button" class="button" value="Reset" /></a></form>
+</div>
+<BR>
+  <div class="row">
+
+      <div class="container-fluid col-sm-10 bg-light text-dark">
+
+<br><br>
+      <h2 ><a href="https://csse.usc.edu/new/rricardo-valerdi-receives-top-honor-from-international-cost-estimation-society" title="Permalink to Ricardo Valerdi Receives Top Honor from International Cost Estimation Society" rel="bookmark" style="color:#000000">Ricardo Valerdi Receives Top Honor from International Cost Estimation Society</a></h2>
+	<br>
+      <h6><div>
+                        <span class="sep">Posted on </span><a href="https://csse.usc.edu/new/rricardo-valerdi-receives-top-honor-from-international-cost-estimation-society" title="9:37 am" rel="bookmark">
+			<time class="entry-date updated" datetime="2015-07-13T09:37:43-07:00" pubdate>July 13, 2015</time></a><span class="by-author"> 
+			<span class="sep"> by </span> <span class="author vcard">
+			<a class="url fn n" href="https://csse.usc.edu/new/author/admin" title="View all posts by admin" rel="author">admin</a></span></span>
+                        </div>
+      </h6>
+      <div class="entry-content">
+      <p>Congratulations to Ricardo Valerdi at the University of Arizona and his lifetime achievement award!</p>
+      <p>http://news.engr.arizona.edu/news/ricardo-valerdi-receives-top-honor-international-cost-estimation-society</p>
+      <p>&nbsp;</p>
+      </div>
+      <footer class="entry-meta">
+      <span class="cat-links">
+      <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="https://csse.usc.edu/new/category/uncategorized" rel="category tag">Uncategorized</a>			
+      </span>			
+      </footer><br>
+    </div>
+  </div><br><br>
+ <div class="row">
+      <div class="container-fluid col-sm-10 bg-light text-dark">
+      <h2><a href="https://csse.usc.edu/new/dr-christiaan-paredis-gives-usc-talk" title="Permalink to Dr. Christiaan Paredis gives USC talk" rel="bookmark" style="color:#000000">Dr. Christiaan Paredis gives USC talk</a></h2>
+	<br>
+      <h6><div>
+                        <span class="sep">Posted on </span><a href="https://csse.usc.edu/new/dr-christiaan-paredis-gives-usc-talk" title="12:49 pm" rel="bookmark"><time class="entry-date updated" datetime="2015-01-28T12:49:35-07:00" pubdate>January 28, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="https://csse.usc.edu/new/author/admin" title="View all posts by admin" rel="author">admin</a></span></span>
+      </div>
+      </h6>
+      <div class="entry-content">
+      <p>Thank you so much to Dr. Christiaan Paredis for his time and giving a great talk to our faculty and students! The talk slides are linked below, as well as, the program briefing for ESD and SYS (with an accompanying video on slide 2).</p>
+<p style="text-align: center;"><a href="http://csse.usc.edu/new/wp-content/uploads/2015/01/NSF_TheoreticalFramework_Paredis_20150118.pdf">A Theoretical Framework for Systems Engineering and Design Asking &#8220;Why?&#8221; rather than just &#8220;How?&#8221;</a></p>
+<p style="text-align: center;"><a href="http://csse.usc.edu/new/wp-content/uploads/2015/01/NSF_ProgramBriefing_v1.13_20141202.pdf">NSF Program Briefing for ESD and SYS</a></p>
+<p style="text-align: left;">Abstract:</p>
+<p style="text-align: left;">An important component of the Engineering and Systems Design (ESD) and Systems Science (SYS) programs at the National Science Foundation (NSF) is the development of a theoretical foundation for systems engineering and design. In this presentation, I will motivate the need for a theoretical framework and explain what it is.  As an example, a model for systems engineering and design will be introduced in which the artifact development process is modeled as a search process.  Unlike many models in the literature, this model provides an explanation for (rather than just a description of) current practices.  Related to the need for a theoretical framework is the need for rigorous research methodology.  I will therefore present some thoughts on the desired characteristics of a rigorous research methodology for systems engineering and design.  The presentation will end with some logistical details about the NSF programs and an opportunity for Q&amp;A. The overall goal is to increase the success of principal investigators when submitting proposals to the ESD or SYS programs.</p>
+<p style="text-align: left;">Bio:</p>
+<p class="p1"><span class="s1">Dr. Chris Paredis is Program Director for the Engineering and Systems Design (ESD) and Systems Science (SYS) programs at the National Science Foundation.  He is also Professor of Mechanical Engineering in the G.W. Woodruff School of Mechanical Engineering, and in the H.M. Stewart School of Industrial and Systems Engineering at Georgia Tech, Atlanta, USA.  He is a Woodruff Faculty Fellow and Director of the Model-Based System Engineering Center. He holds graduate degrees in Mechanical Engineering from the Catholic University of Leuven (Belgium) and in Electrical and Computer Engineering from Carnegie Mellon University. </span></p>
+<p class="p1"><span class="s1">Dr. Paredis&#8217; research focuses on Model-Based Systems Engineering, combining aspects of decision theory, information technology, simulation, and systems theory to support the design of complex mechatronic systems. In these areas, he has published more than 140 refereed book chapters, journal articles and conference papers.  He has made significant contributions to the development of the theory, methods and tools for decision making in design and systems engineering, and has developed several decision support tools using the SysML and Modelica languages.  As Director of the Model-Based Systems Engineering Center, he leads a group of 11 faculty members towards the development of a next generation of systems engineering methods that are value-driven, model-based and human-centered.</span></p>
+<p class="p1"><span class="s1">Within the Object Management Group (OMG), he served on the SysML Revision Task Force and has led the development of the SysML-Modelica Transformation Specification. He was a founding board member of the North America Modelica Users&#8217; Group, and served on the working group responsible for the INCOSE &#8220;Systems Engineering Vision 2025.&#8221;  He is also a member of the Technical Advisory Board for Integrated Model-Centric Engineering Program at NASA/JPL, is past Chair of the ASME Computers and Information in Engineering division, and has served as Conference Chair for the 2013 Conference on Systems Engineering Research (CSER&#8217;13) and the 2007 Computers and Information in Engineering Conference (CIE&#8217;07).</span></p>
+<p class="p1"><span class="s1">Dr. Paredis has served as Associate Editor for the SAE Journal of Commercial Vehicles and the ASME Journal of Mechanical Design.  He currently serves as co-Editor of the ASME book series, &#8220;Advances in Computers and Information in Engineering Research.&#8221;  He received the 2007 CETL/BP Junior Faculty Teaching Excellence Award, the 2007 SAE Ralph R. Teetor Educational Award, and the 2011 ASME CIE Excellence in Research Award.</span></p>
+     </div><!-- .entry-content -->
+     <footer class="entry-meta">
+												<span class="cat-links">
+				<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="https://csse.usc.edu/new/category/news" rel="category tag">News</a>			</span>
+									<span class="sep"> | </span>
+							<span class="tag-links">
+				<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="https://csse.usc.edu/new/tag/esd" rel="tag">ESD</a>, <a href="https://csse.usc.edu/new/tag/nsf" rel="tag">NSF</a>, <a href="https://csse.usc.edu/new/tag/paredis" rel="tag">Paredis</a>, <a href="https://csse.usc.edu/new/tag/sys" rel="tag">SYS</a>			</span>
+						
+			
+    </footer><br>
+    </div>
+  </div><br><br>
+ <div class="row">
+      <div class="container-fluid col-sm-10 bg-light text-dark">
+      <h2><a href="https://csse.usc.edu/new/the-incremental-commitment-spiral-model-principles-and-practices-for-successful-systems-and-software" title="Permalink to The Incremental Commitment Spiral Model: Principles and Practices for Successful Systems and Software" rel="bookmark" style="color:#000000">The Incremental Commitment Spiral Model: Principles and Practices for Successful Systems and Software</a></h2>
+	<br>
+      <h6><div>
+                         <span class="sep">Posted on </span><a href="https://csse.usc.edu/new/the-incremental-commitment-spiral-model-principles-and-practices-for-successful-systems-and-software" title="11:54 am" rel="bookmark"><time class="entry-date updated" datetime="2014-04-14T11:54:07-07:00" pubdate>April 14, 2014</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="https://csse.usc.edu/new/author/admin" title="View all posts by admin" rel="author">admin</a></span></span>
+      </div>
+      </h6>
+      <div class="entry-content">
+      <h5>Congratulations!</h5>
+<p><a style="line-height: 1.5em;" href="http://csse.usc.edu/new/wp-content/uploads/2014/04/ICSM-book.jpg"><img class="alignleft size-medium wp-image-701" src="http://csse.usc.edu/new/wp-content/uploads/2014/04/ICSM-book-231x300.jpg" alt="ICSM book" width="231" height="300" srcset="https://csse.usc.edu/new/wp-content/uploads/2014/04/ICSM-book-231x300.jpg 231w, https://csse.usc.edu/new/wp-content/uploads/2014/04/ICSM-book.jpg 385w" sizes="(max-width: 231px) 100vw, 231px" /></a></p>
+<p>We want to congratulate Dr. Barry W. Boehm, Dr. Jo Ann Lane, Dr. Supannika Koolmanojwong and Dr. Richard Turner in their new publication.
+<br>??Title makes a huge promise, a way to divide commitment into increments that are both meetable (good news for developers) and meaningful (good news for managers and stakeholders). And the book makes good on that promise- Tom DeMarco, Principal, The Atlantic Systems Guild, author of <em>Peopleware, Deadline and Slack.</em><br><br>??I am seriously impressed with this ICSM book. Besides being conceptually sound, I was amazed by the sheer number of clear and concise characterizations of issues, relationships, and solutions. I wanted to take a yellow highlighter to it until I realized be highlighting most of the book- Curt Hibbs, Chief Agile Evangelist, Boeing</p>
+<p><span style="line-height: 1.5em;">You can get your pre-order from Amazon: </span><a style="line-height: 1.5em;" href="https://urldefense.proofpoint.com/v2/url?u=http-3A__www.amazon.com_The-2DIncremental-2DCommitment-2DSpiral-2DModel_dp_0321808223&d=DwMGag&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=IE9O4r_25lruPlA9_GE7QA&m=wW449uCUEe9ZKA6pIMYswC9QsIOissgl4oel7KA3His&s=IV73ngV53bbyTd1NbYdeE1POePkq3ch4Gta_r_MH538&e=">http://www.amazon.com/The-Incremental-Commitment-Spiral-Model/dp/0321808223</a></p>
+<p>&nbsp;</p>
+     </div><!-- .entry-content -->
+     <footer class="entry-meta">
+					<span class="cat-links">
+				<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="https://csse.usc.edu/new/category/news" rel="category tag">News</a>			
+</span>		
+    </footer><!-- #entry-meta --><br>
+    </div>
+  </div><br><br>
+<div class="row">
+      <div class="container-fluid col-sm-10 bg-light text-dark">
+      <h2><a href="https://csse.usc.edu/new/dr-barry-w-boehm-named-usc-distinguished-professor" title="Permalink to Dr. Barry W. Boehm named USC Distinguished Professor" rel="bookmark" style="color:#000000">Dr. Barry W. Boehm named USC Distinguished Professor</a></h2>
+	<br>
+      <h6><div>
+                     <span class="sep">Posted on </span><a href="https://csse.usc.edu/new/dr-barry-w-boehm-named-usc-distinguished-professor" title="1:01 pm" rel="bookmark"><time class="entry-date updated" datetime="2014-01-27T13:01:22-07:00" pubdate>January 27, 2014</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="https://csse.usc.edu/new/author/admin" title="View all posts by admin" rel="author">admin</a></span></span>
+      </div>
+      </h6>
+      <div class="entry-content">
+      <p>On January 13, 2014, President C. L. Max Nikias announced his appointment for Dr. Barry Boehm as Distinguished Professor along with Dr. Jonathan Samet and Dr. Eileen Crimmins as University Professor.  Their outstanding accomplishments do honor to the University.  For a complete list of USC Distinguished Professors, please refer to <a title="USC Distinguished Professors" href="http://about.usc.edu/faculty/distinguished-professors/" target="_blank">http://about.usc.edu/faculty/distinguished-professors/</a></p>
+<p><a href="http://csse.usc.edu/new/wp-content/uploads/2013/07/Barry-Picture-1.jpg"><img class="alignleft size-medium wp-image-17" src="http://csse.usc.edu/new/wp-content/uploads/2013/07/Barry-Picture-1-300x200.jpg" alt="Barry W Boehm" width="300" height="200" srcset="https://csse.usc.edu/new/wp-content/uploads/2013/07/Barry-Picture-1-300x200.jpg 300w, https://csse.usc.edu/new/wp-content/uploads/2013/07/Barry-Picture-1-1024x682.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Barry Boehm is the TRW Distinguished Professor in Software Engineering, Professor of Computer Science and Industrial and Systems Engineering, and founding director of the USC Center for Systems and Software Engineering. He is a member of the National Academy of Engineering and fellow of the Association for Computing Machinery (ACM), American Institute of Aeronautics and Astronautics (AIAA), Institute of Electrical and Electronics Engineers (IEEE), and International Council on Systems Engineering (INCOSE). He has honorary degrees from the University of Massachusetts and Chinese Academy of Sciences and has received the IEEE Simon Ramo Medal in recognition of his innovative solutions to the integration of systems engineering and software engineering. A pioneer in the field of software engineering, Professor Boehmâ??s research codified principles surrounding software development. The models he developed have revolutionized and laid the foundation for the development and production of increasingly complex software systems that are used regularly in all major social institutions, including transportation, education, banking, and defense.</p>     
+</div><!-- .entry-content -->
+<footer class="entry-meta">
+  <span class="cat-links">
+  <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="https://csse.usc.edu/new/category/news" rel="category tag">News</a>			
+  </span>    
+</footer><!-- #entry-meta --><br>
+    </div>
+  </div><br><br>
+
+<div class="row">
+      <div class="container-fluid col-sm-10 bg-light text-dark">
+      <h2><a href="https://csse.usc.edu/new/dr-rachchabhorn-wongsaroj-bank-of-thailand" title="Permalink to Dr. Rachchabhorn Wongsaroj, Bank of Thailand" rel="bookmark" style="color:#000000">Dr. Rachchabhorn Wongsaroj, Bank of Thailand</a></h2>
+	<br>
+      <h6><div>
+      
+      </div></h6>
+      <div class="entry">
+      <p>January 2014 marks the end of Dr. Rachchabhorn &#8220;Place&#8221; Wongsaroj&#8217;s visiting research with the USC Center for Systems and Software Engineering.  During Place&#8217;s visit to USC CSSE in January 2013, she developed an electronic process guide for Bank of Thailand&#8217;s internal data management system using IBM Rational Method Composer, studied the system capability affordability tradespace, balancing expedited systems engineering to reduce schedule and cost, encourage flexibility in architecture decisions to support future evolution of the system and minimize technical debt that either results in later rework or adversely impacts future options, analyzed top enablers and inhibitors of Expedited Systems Engineering, Flexible Systems and Technical Debt, and the relationship between these enablers and inhibitors and an initial analysis of the appropriateness of the COCOMO II cost drivers and scale divers for the case of Big Data project cost estimation.  This research and collaboration is a welcome exchange of data and knowledge between USC CSSE and the Bank of Thailand as well further study of software development method concepts, techniques, processes, frameworks, methodologies, criteria of selections that are appropriate for application in organizational projects.  We send a warm debt of gratitude to Dr. Wongsaroj as she returns to the Statistics and Information Systems Department at the Bank of Thailand.</p>
+<p><a href="http://csse.usc.edu/new/wp-content/uploads/2013/09/DSC06385_pp.jpg"><img class="" src="http://csse.usc.edu/new/wp-content/uploads/2013/09/DSC06385_pp-168x300.jpg" alt="Dr. Rachchabhorn Wongsaroj" srcset="https://csse.usc.edu/new/wp-content/uploads/2013/09/DSC06385_pp-168x300.jpg 168w, https://csse.usc.edu/new/wp-content/uploads/2013/09/DSC06385_pp-574x1024.jpg 574w" sizes="(max-width: 68px) 50vw, 68px" /></a>Dr. Rachchabhorn Wongsaroj is a senior business analyst in the data management department with the Bank of Thailand.  She graduated with a PhD in Management Technology from the Asian Institute of Technology.  Her research interests are big data as well as data quality management.  Dr. Wongsaroj may be contacted at: rachchaw@bot.or.th</p>
+     
+</div><!-- .entry-content -->
+<footer class="entry-meta">
+<div class="entry-meta">
+				<a href="https://csse.usc.edu/new/dr-rachchabhorn-wongsaroj-bank-of-thailand" rel="bookmark"><time class="entry-date" datetime="2014-01-24T13:14:14-07:00" pubdate>January 24, 2014</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="https://csse.usc.edu/new/author/admin" title="View all posts by admin" rel="author">admin</a></span></span>			</div><!-- .entry-meta -->
+			<div class="entry-meta">
+								<span class="cat-links">
+					<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="https://csse.usc.edu/new/category/news" rel="category tag">News</a>				</span>
+								
+							</div><!-- .entry-meta -->
+</footer><!-- #entry-meta --><br>
+    </div>
+  </div><br><br>
+
+<div class="row">
+      <div class="container-fluid col-sm-10 bg-light text-dark">
+      <h2><a href="https://csse.usc.edu/new/csse-alumni-ricardo-valerdi-mixes-middle-schoolers-and-baseball-at-the-university-of-arizona" title="Permalink to CSSE Alumni, Ricardo Valerdi, mixes middle schoolers and baseball at the University of Arizona" rel="bookmark" style="color:#000000">CSSE Alumni, Ricardo Valerdi, mixes middle schoolers and baseball at the University of Arizona</a></h2>
+	<br>
+      <h6><div>
+      <span class="sep">Posted on </span><a href="https://csse.usc.edu/new/csse-alumni-ricardo-valerdi-mixes-middle-schoolers-and-baseball-at-the-university-of-arizona" title="12:27 pm" rel="bookmark"><time class="entry-date updated" datetime="2013-09-11T12:27:26-07:00" pubdate>September 11, 2013</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="https://csse.usc.edu/new/author/admin" title="View all posts by admin" rel="author">admin</a></span></span>
+      </div></h6>
+      <div class="entry">
+      <h1><span style="font-size: 13px;">A partnership with the Arizona Diamondbacks and the University of Arizona, Dr. Ricardo Valerdi and his team of volunteers celebrate </span><strong style="font-size: 13px;">Science of Baseball</strong><span style="font-size: 13px;"> program one year anniversary.</span></h1>
+<p>Read more: <a href="https://urldefense.proofpoint.com/v2/url?u=http-3A__uanews.org_story_college-2Dof-2Dengineering-2Dprogram-2Dfor-2Dmiddle-2Dschoolers-2Ddrives-2Dhome-2Dstem&d=DwMGag&c=clK7kQUTWtAVEOVIgvi0NU5BOUHhpN0H8p7CSfnc_gI&r=IE9O4r_25lruPlA9_GE7QA&m=wW449uCUEe9ZKA6pIMYswC9QsIOissgl4oel7KA3His&s=n6YQh5pH533G4dATGqmp2tGLvhPNtOwqfFLZ2B0eYSQ&e=">http://uanews.org/story/college-of-engineering-program-for-middle-schoolers-drives-home-stem</a></p>
+<p><a href="http://csse.usc.edu/new/wp-content/uploads/2013/08/R-Valerdi.jpg"><img src="http://csse.usc.edu/new/wp-content/uploads/2013/08/R-Valerdi.jpg" alt="R Valerdi" width="229" height="220" /></a></p>					
+</div><!-- .entry-content -->
+<footer class="entry-meta">
+						<span class="cat-links">
+				<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="https://csse.usc.edu/new/category/news" rel="category tag">News</a>			</span>
+									
+			
+					</footer><!-- #entry-meta --><br>
+    </div>
+  </div><br><br>
+</div>
+</div>
+      </div>
+       <div class="navbar fixed-bottom justify-content-center" style="background-color: #D0D0D0;text-align: center; color: black; font-size: 10px;">
+          <a href="https://www.usc.edu/" style="color:#990000" target="_blank" rel="noopener">University of Southern California</a> | <a href="/" style="color:#990000" >Center for System and Software Engineering</a> | <a href="https://viterbi.usc.edu/privacy" style="color:#990000" target="_blank" rel="noopener">Privacy Notice</a> | <a href="https://policy.usc.edu/smoke-free/" style="color:#990000" target="_blank" rel="noopener">Smoke-Free Policy</a>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
