@@ -189,36 +189,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
  
 
-<!-- Optional JavaScript --> 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script>
-      function renderHeader(user) {
-        var html = '';
-        if (!user) {
-          html = '<a class="nav-link" href="/auth/linkedin">Sign in with linkedin</a>';
-        } else {
-          html = '<h6 class="nav-link">' + user.email.substring(0, user.email.indexOf('@')) + '</h6>';
-          $("#admin-actions").show();
-          $("#sign-out").show();
-        }
-        $("#linkedin-signin").append(html);
-      }
-      $(function() {
-        $.ajax({
-          type: "GET",
-          url: "/api/current_user",
-          contentType:"application/json",
-          success: function(resp) {
-            renderHeader(resp);
-            return true;
-          },
-          error: function(e) {
-            alert(e.responseText);
-            return false;
-          }
-        });
-      });
-        </script>
+
 
    
 </body>
