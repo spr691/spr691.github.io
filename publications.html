@@ -1,82 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<style type="text/css">
-	.date-time-wrap {
-		width: 50px;
-	    border: black;
-	    text-align: center;
-	    font: bold;
-	    font-weight: bold;
-	    background: #999;
-	    color: white;
-	}
-	.event-day{
-		background-color: #990000;
-	}
-	
-.carousel-control-prev-icon {
- background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none;
-    margin-right:-4px;
-    text-align: center;
-}
-#left{
-	overflow-y: scroll;
-	height: 400px;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus  {
-	color: #990000;
-}
-.bottom-line{
-	color: #990000;
-}
-.red-background{
-	background-color: #990000;
-}
-.white{
-	color:white;
-}
-.fa {
-  
-  font-size: 30px;
-  width: 40px;
-  height: 38px;
-  background-color: #990000;
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  
-}
-.fa:hover {
-    opacity: 0.7;
-}
-</style>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Home - CSSE</title>
-  </head>
-  <body>
-     <div class="container-fluid">
+    <title>Publications</title>
+
+
+    <style type="text/css">
+        .table{
+            border-collapse: collapse;
+        }
+        .table td{
+            border: 0;
+            padding-top: .9em;
+            padding-bottom: .9em;
+        }
+
+        #pubTitle{
+            color: #1a0dab;
+        }
+
+        #pubAuthor, #pubDtype{
+            color: #777777;
+            font-size: 14px;
+        }
+
+        #pubId{
+            color: #777777;
+            font-size: 7px;
+        }
+
+        #result{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+      .row-centered {
+          text-align:center;
+      }
+      
+      .col-centered {
+          display:inline-block;
+          float:none;
+          margin-right:-4px;
+          text-align: center;
+      }
+      #left{
+        overflow-y: scroll;
+        height: 400px;
+      }
+      
+      .bottom-line{
+        color: #990000;
+      }
+      .red-background{
+        background-color: #990000;
+      }
+      .white{
+        color:white;
+      }
+      .fa {
+        
+        font-size: 30px;
+        width: 40px;
+        height: 38px;
+        background-color: #990000;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        
+      }
+      .fa:hover {
+          opacity: 0.7;
+      }
+      </style>
+          
+</head>
+<body>
+
+ <div class="container-fluid">
       <div class="row align-items-center" style="background-color: #990000;">
         <div class="col-sm-2">
           <img class="img-fluid float-left" src = "http://csse.usc.edu/new/wp-content/uploads/2015/01/logo.png" >
@@ -155,21 +164,9 @@
         </div>
       </div>
     </div>
-      <div class="container-fluid border p-5 mb-4 bg-light text-dark">
-      <div class="row justify-content-left">
-              <h2 style="color: #990000;">
-               COURSES
-              </h2><br><br><br>
-              <div class="col-6">
-	<br><br><br><h4><a href="https://greenbay.usc.edu/csci577/fall2019/">CS577a Software Engineering I</a><br></h4><br>
-	<h4><a href="https://csse.usc.edu/classes_wp/csci-510-fall-2015/">CS510 Software Management & Economics</a><br></h4>
-	     </div>
-      	</div>
-      </div>
-      </div>
-       <div class="navbar fixed-bottom justify-content-center" style="background-color: #D0D0D0;text-align: center; color: black; font-size: 10px;">
-          <a href="https://www.usc.edu/" style="color:#990000" target="_blank" rel="noopener">University of Southern California</a> | <a href="/" style="color:#990000" >Center for System and Software Engineering</a> | <a href="https://viterbi.usc.edu/privacy" style="color:#990000" target="_blank" rel="noopener">Privacy Notice</a> | <a href="https://policy.usc.edu/smoke-free/" style="color:#990000" target="_blank" rel="noopener">Smoke-Free Policy</a>
-    </div>
+                
+    <!-- <button id="get-publications" onclick="getPublications()">Get Publications</button> -->
+    <div id="result"></div> 
 <!-- Optional JavaScript --> 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -202,7 +199,70 @@
           }
         });
       });
-        </script>
+        </script> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        function validatePublication(str){
+            if(str.includes("Barry W. Boehm"))
+                return true;
+            else
+                return false;
+        }
 
+        function displayPublications(resp){
+            const obj = JSON.parse(resp);
+
+            let resultTable = '<table class="publicationTable table table-striped">';
+            resultTable += '<tr>';
+            
+            resultTable += '<thead class="thead-light">';
+            resultTable += '<th> TITLE </th>';
+            resultTable += '<th> VENUE </th>';
+            resultTable += '<th> YEAR </th>';
+            resultTable += '</thead>';
+            resultTable += '</tr>';
+            
+            for(let i=0; i < obj.length; i++){
+                let substrAuthors = obj[i].authors;
+                substrAuthors = substrAuthors.trim().slice(0, -1).replace(/\|/g, ', ');
+
+                if(validatePublication(substrAuthors)){
+                    resultTable += '<tr scope="row">';
+                    resultTable += '<td scope="col">';
+                    resultTable += '<div id="pubTitle" class="h4"> <a href="' + obj[i].ee + '" target="_blank"> '+  obj[i].title +  '</a> </div>';
+                    resultTable += '<div id="pubAuthor"> ' + substrAuthors + '</div>';
+                    resultTable += '<div id="pubDtype"> ' + obj[i].doi + '</div>';
+                    resultTable += '<div id="pubId"> ' + obj[i].pubid + '</div>';
+                    resultTable += '</td>';
+
+                    resultTable += '<td scope="col">' + obj[i].venue + '</td>';
+                    resultTable += '<td scope="col">' + obj[i].year + '</td>';
+
+                    resultTable += '</tr>';
+                }
+            }
+
+            resultTable += '</table>';
+            $('#result').html(resultTable);
+        }
+
+        function getPublications(){
+            $.ajax({
+                contentType:"application/json",
+                type: "GET",
+                url: "/api/publications",
+                success: function(resp) {
+                displayPublications(resp);
+                },
+                error: function(e) {
+                alert(e.responseText);
+                }
+            }); 
+        }
+        $(function() {
+            getPublications();
+        })
+    </script>
 </body>
 </html>
