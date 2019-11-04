@@ -1,5 +1,63 @@
 <!doctype html>
 <html lang="en">
+<style type="text/css">
+  .date-time-wrap {
+    width: 50px;
+      border: black;
+      text-align: center;
+      font: bold;
+      font-weight: bold;
+      background: #999;
+      color: white;
+  }
+  .event-day{
+    background-color: #990000;
+  }
+  
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin-right:-4px;
+    text-align: center;
+}
+#left{
+  overflow-y: scroll;
+  height: 400px;
+}
+.bottom-line{
+  color: #990000;
+}
+.red-background{
+  background-color: #990000;
+}
+.white{
+  color:white;
+}
+.fa {
+  
+  font-size: 30px;
+  width: 40px;
+  height: 38px;
+  background-color: #990000;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  
+}
+.fa:hover {
+    opacity: 0.7;
+}
+</style>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,17 +66,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Home - CSSE</title>
+
+</script> 
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col">
-          <img src = "http://csse.usc.edu/new/wp-content/uploads/2015/01/logo.png" >
+      <div class="row align-items-center" style="background-color: #990000;">
+        <div class="col-sm-2">
+          <img class="img-fluid float-left" src = "http://csse.usc.edu/new/wp-content/uploads/2015/01/logo.png" >
         </div>
-        <div class="col-6">
+        <div class="col-sm-8">
           <div class="row justify-content-center">
-            <span>Center for Systems and Software Engineering</span>
+            <h3 class="text-md-center" style="color: #fbcd33; text-align: center;">Center for Systems and Software Engineering</h3>
           </div>
           <div class="row justify-content-center align-items-end">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,15 +88,16 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav" >
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                   </li>
+                  
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="/news">News</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                   <li class="nav-item">
+                    <a class="nav-link" href="/events">Events</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,102 +106,196 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Technical Reports</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Publications</a>
+                      <a class="dropdown-item" href="/publications">Publications</a>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Affiliates</a>
+                    <a class="nav-link" href="/affiliates">Affiliates</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Newsletter</a>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Education
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/Education_Admission">Admission</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/Education_Degrees">Degrees</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/Education_Courses">Courses</a>
+                    </div>
                   </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Admin
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/admin_events">Add events</a>
+                      <div class="dropdown-divider"></div>
+                    </div>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sign in
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"><input type="button" onclick="location.href='/register';" value="Register"/></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><input type="button" onclick="location.href='/login';" value="Sign In"/></a>
+                    </div>
+                  </li> -->
+                  <li class="nav-item" id="linkedin-signin"></li>
+                  <li style="display:none" id="sign-out" class="nav-item"><a class="nav-link" href="/auth/logout">Sign Out</a></li>
                 </ul>
               </div>
             </nav>
           </div>
         </div>
-        <div class="col">
-          <div class="row justify-content-center">LinkedIn</div>
-          <div class="row justify-content-center">Admin Sign in</div>
-        </div>
       </div>
     </div>
-    <div class="container-fluid border">
-      <div class="row justify-content-center">
-              <h2>
+  <div class="container-fluid border p-3 mb-2 bg-light text-dark">
+        <div class="row justify-content-center">
+              <h2 class="text-center">
                Welcome to the USC Center for Systems and Software Engineering!
               </h2>
-              <div class="col-6">
-Here we will be featuring our latest news, updates & events. We encourage all our Affiliates, Alumni and current members to send us their latest information, requests and especially upcoming events for us to post.  Thank you for your continued support!
-
-      </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-1 border-right">
-           <a class="link" href="#">Tech Reports</a>
         </div>
-        <div class="col-1">
-           <a class="link" href="#">Tool Acess</a>
+        <div class="row justify-content-center">
+              <div class="col text-center">
+        Here we will be featuring our latest news, updates & events. We encourage all our Affiliates, Alumni and current members to send us their latest information, requests and especially upcoming events for us to post.  Thank you for your continued support! <br>
+          </div>
+        </div>
+<br>
+        <div class="row justify-content-center">
+          <div class="col border-right">
+              <a class="btn float-right red-background white" href="/reports/" data-options="thumbnail: ''">Tech Reports</a> 
+          </div>
+          <div class="col">
+              <a class="btn red-background white" href="/tools/" data-options="thumbnail: ''">Tool Access</a> 
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid border p-3 mb-2 bg-light text-dark">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <img class="img-fluid rounded mx-auto d-block" src="http://csse.usc.edu/new/wp-content/uploads/2013/07/Barry-Picture-1-300x200.jpg">
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col justify-content-md-center text-center">
+<br>
+          <h2>Barry W. Boehm</h2>
+          <span style="font-size: 12px;">TRW Professor of Software Engineering, Computer Science Department, USC
+      Director, USC Center for Systems and Software Engineering
+      B.A., Math, Harvard 1957; Ph.D., Math, UCLA 1964
+      <br>
+      Barry W. Boehm is the University of Southern California Distinguished Professor of Computer Science, Industrial and Systems Engineering, and Astronautics; the TRW Professor of Software Engineering; and Founding Director of the USC Center for Systems and Software Engineering.  
+      He is also the Chief Scientist of the DoD-Stevens-USC Systems Engineering Research Center, and a part-time employee of the Aerospace Corp.  He received his B.A. degree from Harvard in 1957, and his M.S. and Ph.D. degrees from UCLA in 1961 and 1964, all in Mathematics. He has also received honorary Sc.D. in Computer Science from the U. of Massachusetts in 2000 and in Software Engineering from the Chinese Academy of Sciences in 2011.<a href="profile link">See complete profile..</a>
+       </span>
         </div>
       </div>
     </div>
-    <div class="container-fluid border">
-      <div class="row justify-content-center">
-        <div class="col">
-        <img class="rounded-circle" src="http://csse.usc.edu/new/wp-content/uploads/2013/07/Barry-Picture-1-300x200.jpg">
-        </br>
-        blah
-        </br>
-        blah
-        </div>
-        <div class="col">
-        </br>
-        blah
-        </br>
-        blah
-        </br>
-        blah
-        </br>
-        blah
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
+    <div class="container-fluid p-3 mb-2 bg-light text-dark">
       <div class="row">
-        <div class="col-5">
+      <div class="col">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+          <span class="sr-only">Previous</span>
+      </a>  
+      </div>
+        <div class="col-8 justify-content-md-center text-center">
           <h4>Upcoming Events</h4>
-        </br>
-        blah
-        </br>
-        blah
-        </br>
-        blah
-
-        </div>
-        <div class="col">
-          <h4>News Feed </h4>
-        blah
-        </br>
-        blah
-        </br>
-        blah
-        </br>
-        blah
-        </div>
-        </div>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1000">
+        <div class="carousel-inner" style="height: 350px;" id="carousel-contents">
+          <div class="carousel-item active">
+              <span class="d-block w-100" >
+                <div class="date-time-wrap"> <div class="event-month">Oct</div> <div class="event-date">19</div> <div class="event-day">Sat</div>
+                </div>
+                <p><b>USC CSSE Annual Research Review 2018
+                March 13, 2018 - March 15, 2018</b>
+                <br>
+                USC Davidson Conference Center, 3415 South Figueroa Street
+                Los Angeles, CA 90089 United States + Google Map
+                <br>
+                USC Center for Systems and Software Engineering presents 2018 Annual Research Review March 13 – 15, 2018 @ USC Register Here | Program | Hotel / Directions | Contact Us Future Software and Systems Engineering Challenges As our current software-intensive systems become more and more interconnected, semi-autonomous, and rapidly evolving, the software and systems engineering communities are struggling to adapt to these immediate demands for faster, better, and cheaper systems, yet more complex than ever before systems and systems of systems (SoS). <a href="https://csse.usc.edu/new/event/usc-csse-annual-research-review-2018/">find out more ..</a>
+            </p>
+          </span>
+          </div>
+          <div class="carousel-item ">
+              <span class="d-block w-100" >
+                <div class="date-time-wrap"> <div class="event-month">Oct</div> <div class="event-date">19</div> <div class="event-day">Sat</div>
+                </div>
+                <p><b>TITLE</b>
+                <br><b>DATE AND TIME</b>
+            <br>
+            LOCATION
+            <br>
+            DESCRIPTION 
+            <br>
+            blah
+            <br> blah
+             <a href="read more link">find out more ..</a></p>
+          </span>
+          </div>
+          <div class="carousel-item">
+              <span class="d-block w-100" >
+                <div class="date-time-wrap"> <div class="event-month">Oct</div> <div class="event-date">19</div> <div class="event-day">Sat</div>
+                </div>
+                <p><b>32nd International Forum on COCOMO and Systems/Software Cost Modeling
+              October 17, 2017 - October 19, 2017</b>
+              <br>
+              Ronald Tutor Hall Campus Center, 3607 Trousdale Parkway
+              Los Angeles, CA 90089 United States + Google Map
+              <br>
+              32st International Forum on COCOMO® and Systems/Software Cost Modeling  October 17-19, 2017 University of Southern California, Los Angeles, CA Software Sizing Metrics in Light of Recent Systems/Software Engineering Trends—Revisited The USC Center for Systems and Software Engineering (CSSE) will hold its 32nd International Forum on COCOMO® and Systems/Software Cost Modeling at the University of Southern California on October 17-19, 2017. At the 18th Annual COCOMO Forum in 2003, we did a deep dive into software sizing due to changing trends…<a href="https://csse.usc.edu/new/event/32nd-international-forum-on-cocomo-and-systemssoftware-cost-modeling/">find out more ..</a>
+            </p>
+          </span>
+        </div> 
+        </div> 
+      </div>
+      <div class="col text-center">
+            <a href="/events" style="margin-top: -20px;"><button class="btn red-background white" style="margin-bottom: 0; padding: .65em 1.5em; align-self: center;">View Full Calendar</button></a>
+        </div>  
+      </div>
+      <div class="col">
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="false"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
       </div>
     </div>
-    <div class="container-fluid border">
+    <div class="row" style="background-color: #D0D0D0;">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+          <a class="twitter-timeline" href="https://twitter.com/usccsse?ref_src=twsrc%5Etfw">Tweets by usccsse</a> 
+      </div>
+      <div class="col-sm justify-content-center text-center">
+        <p> <h4 class="h-widget">USC Viterbi School of Engineering</h4> </p>
+        <div>
+            <a href="/visiting/"><img class="img-fluid" style="max-width: 70%" alt="Responsive image" src="https://16mhpx3atvadrnpip2kwi9or-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/Footer-Map.png">
+              <div class="row">
+                <div class="col">
+                  <a class="btn red-background white" href="/contact_us" data-options="thumbnail: ''">Contact Us</a> 
+                  <a href="#" class="fa fa-facebook"></a>
+                </div>
+              <div class="col">
+                <a href="#" class="fa fa-twitter"></a>
+                <a class="btn red-background white" href="/visiting/" data-options="thumbnail: ''">Visit Us</a>
+              </div>
+          </div>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid" style="background-color: #D0D0D0;">
       <div class="row justify-content-center">
-          <h3>Footer</h3>
+        <div class="row justify-content-center" style="text-align: center; color: black; font-size: 12px;">
+          <a href="https://www.usc.edu/" style="color:#990000" target="_blank" rel="noopener">University of Southern California</a> | <a href="/" style="color:#990000" >Center for System and Software Engineering</a> | <a href="https://viterbi.usc.edu/privacy" style="color:#990000" target="_blank" rel="noopener">Privacy Notice</a> | <a href="https://policy.usc.edu/smoke-free/" style="color:#990000" target="_blank" rel="noopener">Smoke-Free Policy</a>
+        </div>
       </div>
     </div>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
