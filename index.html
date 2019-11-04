@@ -1,63 +1,5 @@
 <!doctype html>
 <html lang="en">
-<style type="text/css">
-  .date-time-wrap {
-    width: 50px;
-      border: black;
-      text-align: center;
-      font: bold;
-      font-weight: bold;
-      background: #999;
-      color: white;
-  }
-  .event-day{
-    background-color: #990000;
-  }
-  
-.carousel-control-prev-icon {
- background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none;
-    margin-right:-4px;
-    text-align: center;
-}
-#left{
-  overflow-y: scroll;
-  height: 400px;
-}
-.bottom-line{
-  color: #990000;
-}
-.red-background{
-  background-color: #990000;
-}
-.white{
-  color:white;
-}
-.fa {
-  
-  font-size: 30px;
-  width: 40px;
-  height: 38px;
-  background-color: #990000;
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  
-}
-.fa:hover {
-    opacity: 0.7;
-}
-</style>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -66,21 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title>Home - CSSE</title>
-
-</script> 
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row align-items-center" style="background-color: #990000;">
-        <div class="col-sm-2">
-          <img class="img-fluid float-center" src = "http://csse.usc.edu/new/wp-content/uploads/2015/01/logo.png" >
+      <div class="row align-items-center">
+        <div class="col">
+          <img src = "http://csse.usc.edu/new/wp-content/uploads/2015/01/logo.png" >
         </div>
-        <div class="col-sm-8">
+        <div class="col-6">
           <div class="row justify-content-center">
-            <h3 class="text-md-center" style="color: #fbcd33; text-align: center;">Center for Systems and Software Engineering</h3>
+            <span>Center for Systems and Software Engineering</span>
           </div>
           <div class="row justify-content-center align-items-end">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -88,16 +26,15 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav" >
+                <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                   </li>
-                  
                   <li class="nav-item">
-                    <a class="nav-link" href="/news">News</a>
+                    <a class="nav-link" href="#">About</a>
                   </li>
-                   <li class="nav-item">
-                    <a class="nav-link" href="/events">Events</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -106,243 +43,102 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Technical Reports</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/publications">Publications</a>
+                      <a class="dropdown-item" href="#">Publications</a>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/affiliates">Affiliates</a>
+                    <a class="nav-link" href="#">Affiliates</a>
                   </li>
-                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Education
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="/Education_Admission">Admission</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/Education_Degrees">Degrees</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/Education_Courses">Courses</a>
-                    </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Newsletter</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Admin
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="/admin_events">Add events</a>
-                      <div class="dropdown-divider"></div>
-                    </div>
-                  </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Sign in
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item"><input type="button" onclick="location.href='/register';" value="Register"/></a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><input type="button" onclick="location.href='/login';" value="Sign In"/></a>
-                    </div>
-                  </li> -->
-                  <li class="nav-item" id="linkedin-signin"></li>
-                  <li style="display:none" id="sign-out" class="nav-item"><a class="nav-link" href="/auth/logout">Sign Out</a></li>
                 </ul>
               </div>
             </nav>
           </div>
         </div>
+        <div class="col">
+          <div class="row justify-content-center">LinkedIn</div>
+          <div class="row justify-content-center">Admin Sign in</div>
+        </div>
       </div>
     </div>
-  <div class="container-fluid border p-3 mb-2 bg-light text-dark">
-        <div class="row justify-content-center">
-              <h2 class="text-center">
+    <div class="container-fluid border">
+      <div class="row justify-content-center">
+              <h2>
                Welcome to the USC Center for Systems and Software Engineering!
               </h2>
-        </div>
-        <div class="row justify-content-center">
-              <div class="col text-center">
-        Here we will be featuring our latest news, updates & events. We encourage all our Affiliates, Alumni and current members to send us their latest information, requests and especially upcoming events for us to post.  Thank you for your continued support! <br>
-          </div>
-        </div>
-<br>
-        <div class="row justify-content-center">
-          <div class="col border-right">
-              <a class="btn float-right red-background white" href="/reports/" data-options="thumbnail: ''">Tech Reports</a> 
-          </div>
-          <div class="col">
-              <a class="btn red-background white" href="/tools/" data-options="thumbnail: ''">Tool Access</a> 
-          </div>
-        </div>
-    </div>
-    <div class="container-fluid border p-3 mb-2 bg-light text-dark">
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-          <img class="img-fluid rounded mx-auto d-block" src="http://csse.usc.edu/new/wp-content/uploads/2013/07/Barry-Picture-1-300x200.jpg">
-        </div>
+              <div class="col-6">
+Here we will be featuring our latest news, updates & events. We encourage all our Affiliates, Alumni and current members to send us their latest information, requests and especially upcoming events for us to post.  Thank you for your continued support!
+
       </div>
-      <div class="row justify-content-md-center">
-        <div class="col justify-content-md-center text-center">
-<br>
-          <h2>Barry W. Boehm</h2>
-          <span style="font-size: 12px;">TRW Professor of Software Engineering, Computer Science Department, USC
-      Director, USC Center for Systems and Software Engineering
-      B.A., Math, Harvard 1957; Ph.D., Math, UCLA 1964
-      <br>
-      Barry W. Boehm is the University of Southern California Distinguished Professor of Computer Science, Industrial and Systems Engineering, and Astronautics; the TRW Professor of Software Engineering; and Founding Director of the USC Center for Systems and Software Engineering.  
-      He is also the Chief Scientist of the DoD-Stevens-USC Systems Engineering Research Center, and a part-time employee of the Aerospace Corp.  He received his B.A. degree from Harvard in 1957, and his M.S. and Ph.D. degrees from UCLA in 1961 and 1964, all in Mathematics. He has also received honorary Sc.D. in Computer Science from the U. of Massachusetts in 2000 and in Software Engineering from the Chinese Academy of Sciences in 2011.<a href="profile link">See complete profile..</a>
-       </span>
-        </div>
       </div>
-    </div>
-    <div class="container-fluid p-3 mb-2 bg-light text-dark">
-      <div class="row">
-      <div class="col">
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-          <span class="sr-only">Previous</span>
-      </a>  
-      </div>
-        <div class="col-8 justify-content-md-center text-center">
-          <h4>Upcoming Events</h4>
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
-        <div class="carousel-inner" style="height: 450px;" id="carousel-contents">
-        </div> 
-      </div>
-      <br>
-      <div class="col text-center">
-            <a href="/events" style="margin-top: -10px;"><button class="btn red-background white" style="margin-top: 10;margin-bottom: 0; padding: .65em 1.5em; align-self: center;">View Full Calendar</button></a>
-        </div>  
-      </div>
-      <div class="col">
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="false"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-      </div>
-    </div>
-    <div class="row" style="background-color: #D0D0D0;">
-      <div class="col-lg-4 col-md-4 col-sm-4">
-          <a class="twitter-timeline" href="https://twitter.com/usccsse?ref_src=twsrc%5Etfw">Tweets by usccsse</a> 
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4" id="insta-feed">
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <p> <h4 class="h-widget">USC Viterbi School of Engineering</h4> </p>
-        <div>
-            <a href="/visiting/"><img class="img-fluid" style="max-width: 70%" alt="Responsive image" src="https://16mhpx3atvadrnpip2kwi9or-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/Footer-Map.png">
-              <div class="row">
-                <div class="col">
-                  <a class="btn red-background white" href="/contact_us" data-options="thumbnail: ''">Contact Us</a> 
-                  <a href="#" class="fa fa-facebook"></a>
-                </div>
-              <div class="col">
-                <a href="#" class="fa fa-twitter"></a>
-                <a class="btn red-background white" href="/visiting/" data-options="thumbnail: ''">Visit Us</a>
-              </div>
-          </div>
-    </div>
-    </div>
-    </div>
-    <div class="container-fluid" style="background-color: #D0D0D0;">
       <div class="row justify-content-center">
-        <div class="row justify-content-center" style="text-align: center; color: black; font-size: 12px;">
-          <a href="https://www.usc.edu/" style="color:#990000" target="_blank" rel="noopener">University of Southern California</a> | <a href="/" style="color:#990000" >Center for System and Software Engineering</a> | <a href="https://viterbi.usc.edu/privacy" style="color:#990000" target="_blank" rel="noopener">Privacy Notice</a> | <a href="https://policy.usc.edu/smoke-free/" style="color:#990000" target="_blank" rel="noopener">Smoke-Free Policy</a>
+        <div class="col-1 border-right">
+           <a class="link" href="#">Tech Reports</a>
+        </div>
+        <div class="col-1">
+           <a class="link" href="#">Tool Acess</a>
         </div>
       </div>
     </div>
+    <div class="container-fluid border">
+      <div class="row justify-content-center">
+        <div class="col">
+        <img class="rounded-circle" src="http://csse.usc.edu/new/wp-content/uploads/2013/07/Barry-Picture-1-300x200.jpg">
+        </br>
+        blah
+        </br>
+        blah
+        </div>
+        <div class="col">
+        </br>
+        blah
+        </br>
+        blah
+        </br>
+        blah
+        </br>
+        blah
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-5">
+          <h4>Upcoming Events</h4>
+        </br>
+        blah
+        </br>
+        blah
+        </br>
+        blah
+
+        </div>
+        <div class="col">
+          <h4>News Feed </h4>
+        blah
+        </br>
+        blah
+        </br>
+        blah
+        </br>
+        blah
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid border">
+      <div class="row justify-content-center">
+          <h3>Footer</h3>
+      </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script>
-      function renderEvents(events) {
-        for (var i = 0; i < events.length; i++) {
-          var html = "";
-          var dateArray = events[i].date.split(" ");
-          var locationArray = events[i].location.replace(/(\r\n|\n|\r)/gm," ").split(", ");
-          if (i == 0) {
-            html += '<div class="carousel-item active">';
-          } else {
-            html += '<div class="carousel-item">';
-          }
-          
-          // render date
-          html += '<span class="d-block w-100 "> <div class="date-time-wrap" style="margin-left:210px;">';
-          html = html + '<div class="event-month">' + dateArray[2].substring(0, 3) + '</div>';
-          html = html + '<div class="event-date">' + dateArray[1].substring(0, 2) + '</div>';
-          html = html + '<div class="event-day">' + dateArray[0].substring(0, 3) + '</div></div>';
-          // render title
-          html = html + '<p><b>' + events[i].title + '</b>';
-          // render location 
-          var location = locationArray.length > 1 ? locationArray.slice(1).join(' ') : locationArray.join('');
-          html = html + '<br>' + events[i].location + '<a href="https://maps.google.com/maps/place/' + 
-          location + '"> + Google Map</a><br>';
-          // render message
-          // TODO: Find out more
-          html = html + events[i].message + '</p></span></div>';
-          
-          // Append new event
-          $("#carousel-contents").append(html);
-        }
-      }
-      function renderHeader(user) {
-        var html = '';
-        if (!user) {
-          html = '<a class="nav-link" href="/auth/linkedin">Sign in with linkedin</a>';
-        } else {
-          html = '<h6 class="nav-link">' + user.email.substring(0, user.email.indexOf('@')) + '</h6>';
-          $("#admin-actions").show();
-          $("#sign-out").show();
-        }
-        $("#linkedin-signin").append(html);
-      }
-      $(function() {
-        $.ajax({
-          type: "GET",
-          url: "/api/current_user",
-          contentType:"application/json",
-          success: function(resp) {
-            renderHeader(resp);
-            return true;
-          },
-          error: function(e) {
-            alert(e.responseText);
-            return false;
-          }
-        });
-        $.ajax({
-          type: "GET",
-          url: "/api/events",
-          contentType:"application/json",
-          success: function(resp) {
-            renderEvents(resp.data);
-            return true;
-          },
-          error: function(e) {
-            alert(e.responseText);
-            return false;
-          }
-        });
-      });
-
-      $(function() {
-        $.ajax({
-          type: 'GET',
-          url: 'api/instagramFeed',
-          contentType: 'application/json',
-          success: function(res) {
-            alert("Success getting feed");
-            console.log(res);
-            $("#insta-feed").html(res.html);
-
-          },
-          error: function(err) {
-            alert("Error getting feed");
-          }
-        });
-      });
-    </script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
