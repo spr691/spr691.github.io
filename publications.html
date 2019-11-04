@@ -247,22 +247,7 @@
             $('#result').html(resultTable);
         }
 
-        function getPublications(){
-            $.ajax({
-                contentType:"application/json",
-                type: "GET",
-                url: "/api/publications",
-                success: function(resp) {
-                displayPublications(resp);
-                },
-                error: function(e) {
-                alert(e.responseText);
-                }
-            }); 
-        }
-        $(function() {
-            getPublications();
-        })
+        
     </script>
 </body>
 </html>
